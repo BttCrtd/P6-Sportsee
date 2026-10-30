@@ -1,0 +1,52 @@
+.stat-card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19px;
+}
+
+.stat-card {
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background-color: #0b23f4;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.stat-card p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#hours {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#min {
+  font-size: 16px;
+  font-weight: 500;
+  color: #b6bdfc;
+}
+
+.bande-contain .stat-card {
+    background-color: #fcfdfd;
+    color: #0b23f4;
+}
+
+.bande-contain .stat-card h2{
+    color: #0b23f4;
+}
+
+#orange .name, #blue .name{
+    color: #707070;
+}
+
+#orange p{
+    color: #F4320B;
+}
+
+#orange p #min{
+    color: #FCC1B6;
+}

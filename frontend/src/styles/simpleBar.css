@@ -1,0 +1,65 @@
+.simple-bar-container {
+  width: 46%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px 40px 24px 40px;
+}
+
+.simpleBar-header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.period-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.period-buttons button {
+  height: 24px;
+  width: 24px;  
+  border: 1px solid #717171;
+  background-color: white;
+  border-radius: 10px;
+  color: #717171;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h3 {
+  color: #0b23f4;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.recharts-default-legend{
+  padding-top: 35px !important;
+}

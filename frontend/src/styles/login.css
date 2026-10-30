@@ -1,0 +1,140 @@
+.login-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.login-form {
+  width: 44%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 44px 0 35px 150px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-form form {
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffffff;
+  padding: 40px 40px 40px 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.login-form form h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0b23f4;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+}
+
+.connection-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.connection-form h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.connection-form div {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.connection-form div label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.connection-form div input {
+  width: 100%;
+  height: 58px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 0.5px solid #717171;
+  color: #111111;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.connection-btn {
+  width: 100%;
+  background-color: #0b23f4;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  padding: 16px 40px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-form form p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.vertical-banner {
+  background-image: url("../assets/9df2c93c7e6f0e706fbcc75781e225c1fccede71.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 56%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.vertical-banner div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 288px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 50px;
+  margin: 0 20px 20px 0;
+}
+
+.vertical-banner p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0%;
+  color: #0b23f4;
+  margin: 0;
+  line-height: 1;
+}
+
+.login-form form .login-error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
