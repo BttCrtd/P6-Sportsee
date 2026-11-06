@@ -17,26 +17,26 @@ Mistral AI propose une API permettant à une application externe de communiquer 
 L'API Mistral doit permettre de développer les deux fonctionnalités suivantes:
 
 **1- Assistant Sportif**
-L'utilisateur doit pouvoir poser des questions à l'agent sur la course à pied, les entraînement, la récupération, la progression des performences et la nutrition.
-Si des données sportives sont disponnible, elles doivent être transmise à l'agent pour être utilisées et personnaliser la réponse.
-Les questions hors contexte sportifs ne sont pas prise en compte et un message vient rappeler le rôle de l'agent.
+L'utilisateur doit pouvoir poser des questions à l'agent sur la course à pied, les entraînements, la récupération, la progression des performences et la nutrition.
+Si des données sportives sont disponnibles, elles doivent être transmises à l'agent pour être utilisées et personnaliser la réponse.
+Les questions hors contexte sportif ne sont pas prise en compte et un message vient rappeler le rôle de l'agent.
 
 **2- Génération d'un plan d'entraînement**
-L'utilisateur doit pouvoir obtenir un plan personnalisé sur six semaines en prennant en compte:
+L'utilisateur doit pouvoir obtenir un plan personnalisé sur six semaines en prenant en compte:
 - Objectifs personnel (exemples: préparation d'un semie marathon, améliorer son endurance)
-- Historique des performences (séances déjà réaliser, duréer, distance, vitesse, fréquence cardiaque, calorie)
+- Historique des performances (séances déjà réalisées, durée, distance, vitesse, fréquence cardiaque, calorie)
 - Disponibilités (jours d'entraînement, nombre de séances, durée)
 - Date de début du plan d'entrainement
 
-Le programme présente l'entendue du plan (date de début / date de fin), les séances et exercices associés avec une description, la durées.
+Le programme présente l'entendue du plan (date de début / date de fin), les séances et exercices associés avec une description, la durée.
 
 ### 1.3 Contraintes fonctionnelles
 
 **Données utilisateur**
-Les données utilisateur doivent pouvoir être consulter par l'inteligence artificielle mais ne doivent en aucun cas pouvoir être modifier par celle-ci. Une copie des données existante sera donc envoyés à l'intelligence artificielle s'assurer du maintient et de la conformitée des données utilisateur réels.
+Les données utilisateur doivent pouvoir être consultées par l'intelligence artificielle mais ne doivent en aucun cas pouvoir être modifiées par celle-ci. Une copie des données existantes sera donc envoyée à l'intelligence artificielle s'assurant du maintien et de la conformité des données utilisateur réelles.
 
 **Limite de l'agent** 
-En cas de requête faisant part de douleur ou de blessure, l'agent doit diriger l'utilisateur vers un proffessionel de santer. Il ne doit pas apporter de conseil ou de diagnostique.
+En cas de requête faisant part de douleur ou de blessure, l'agent doit diriger l'utilisateur vers un professionnel de santé. Il ne doit pas apporter de conseil ou de diagnostic.
 
 
 ## 2. Fonctionnement
@@ -105,11 +105,11 @@ Le corp de la requête doit être constituée des éléments suivant:
 
     `user` : utilisateur
 
-`temperature` : controle la variabilité des réponse générées
+`temperature` : contrôle la variabilité des réponse générées
 
 `max_tokens` : limite la longueur des réponses
 
-`top_p` : paramètre d'échntillonnage
+`top_p` : paramètre d'échantillonnage
 
 `reponse_format` : format de la réponse
 
@@ -164,7 +164,7 @@ Exemple :
 
 Deux prompt distinct pour répondre aux besoins de Sportsee
 
-### 4.1 Promp 1 - Assistant sportif
+### 4.1 Prompt 1 - Assistant sportif
   
     "Tu es un coach sportif spécialisé dans la course. Ta mission est d’ aider les utilisateurs dans leur progression en répondant à leurs questions, et en analysant les statistiques de leurs performances personnelles s’il y en a. Tu dois leur fournir des conseils personnalisés et réalisables.
 
@@ -195,7 +195,7 @@ Deux prompt distinct pour répondre aux besoins de Sportsee
         "rappel": "Si vous ressentez des douleurs ou un inconfort, consultez un médecin ou un kinésithérapeute."
     }
 
-### 4.2 Promp 2 - Génération d'un plan d'entraînement
+### 4.2 Prompt 2 - Génération d'un plan d'entraînement
 
     "Tu es un coach sportif spécialisé en création de planning sur mesure. 
     Ta mission est de créer un planning sur 6 semaines pour aider l'utilisateur à atteindre son objectif à partir de la date de début et en prenant en compte ses contraintes de temps, de disponibilité.
@@ -289,7 +289,7 @@ Le frontend communique avec le backend à l'aide de requêtes HTTP. Le backend r
 #### 5.2 Requête Assistant sportif 
 
 Méthode HTTP: `POST`
-p
+
 Endpoint : `/api/chat`
 
 Format des données : `JSON`
